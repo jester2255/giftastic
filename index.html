@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>gifTastic</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div id= "list">
-		
-		<p>Here is where the buttons go</p>
 
+	<div id= "list">
 	</div>
+	<form id="car-form">
+      <label for="car-input">Add a model of a automobil</label>
+      <input type="text" id="car-input-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input id="add-car" type="submit" value="Add a Car">
+    </form>
+
+	
 	<div id= "gifs">
-		<p>here is wher the gifs go</p>
+		<!--<p>here is wher the gifs go</p>-->
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/jquery-3.2.1.js"></script>
 	<script type="text/javascript" src="assets/javascript/logic.js"></script>
 </body>
