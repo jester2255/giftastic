@@ -31,8 +31,8 @@ var gif = "gif"
 var gifImage = $("<img>").attr("src", stillGif).attr("data-still", stillGif).attr("data-mobile", mobileGif).attr("data-state", still).attr("class", gif);
 
 //console.log(gifImage)
-gifDiv.text(rated);
-gifDiv.append(" ")
+gifDiv.text("Rating:  " + rated);
+gifDiv.append("<br>")
 gifDiv.append(gifImage);
 $("#gifs").prepend(gifDiv);
 };
