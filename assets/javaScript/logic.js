@@ -15,7 +15,7 @@ $.ajax({
 }).done(function(report){ //report function
 	console.log(gifUrl);
 
-//------------------------------------------------for loop to set display gifs-------------------------------------
+//------------------------------------------------for loop to display gifs-------------------------------------
 
 for (var i = 0; i < 10 ; i++) {
 
@@ -30,15 +30,16 @@ var mobile = "mobile"
 var gif = "gif"
 var gifImage = $("<img>").attr("src", stillGif).attr("data-still", stillGif).attr("data-mobile", mobileGif).attr("data-state", still).attr("class", gif);
 
-console.log(gifImage)
+//console.log(gifImage)
 gifDiv.text(rated);
+gifDiv.append(" ")
 gifDiv.append(gifImage);
 $("#gifs").prepend(gifDiv);
-
+};
 $(".gif").on("click", function(){ 
 
 	var state = $(this).attr("data-state");
-
+		console.log(state)
 	if (state === "still") {
 		$(this).attr("src", $(this).attr("data-mobile"));
         $(this).attr("data-state", "mobile");
@@ -49,7 +50,7 @@ $(".gif").on("click", function(){
       }
 
 		});
-	};
+	
 });
 };
 //--------------------------------------------Creation the Buttons-----------------------------
